@@ -1,0 +1,58 @@
+ion-content{
+    --background: #8D99AE;
+}
+
+@-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+.heartbeat{-webkit-animation:heartbeat 2.4s ease-in-out infinite both;animation:heartbeat 2.4s ease-in-out infinite both}
+
+ion-content img {
+    max-width: 10rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.6rem;  
+}
+
+ion-card{
+    background-color: #2b2d42;
+    border-radius: 10px; 
+}
+
+ion-card-title{
+    color:#EDF2F4;
+    font-weight: bold; 
+}
+
+h3{
+    color:#EDF2F4;
+}
+
+ion-title{
+    color:#03045E;
+    font-weight: bold;
+}
+
+ion-button{
+    --background:#8D99AE;
+    color:#D90429;
+    font-weight: bold;
+}
+
+ion-item{
+    border-radius: 50px;
+    --background: #484e58;
+}
+
+.linea{
+    border-bottom: 1px solid #becad3;
+}
+
+ion-spinner {
+    --color: #D90429;
+}
+
+.buttons{
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+    display: flex;
+    justify-content:space-evenly;
+}

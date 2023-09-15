@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'AlarmaRobo',
   appName: 'Alarma de Robo',
   webDir: 'www',
   server: {
