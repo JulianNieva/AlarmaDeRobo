@@ -18,7 +18,7 @@ ion-content {
 }
 
 @-webkit-keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
-.swing-in-top-fwd{-webkit-animation:swing-in-top-fwd .9s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-fwd .9s cubic-bezier(.175,.885,.32,1.275) both}
+.swing-in-top-fwd{-webkit-animation:swing-in-top-fwd .10s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-fwd .9s cubic-bezier(.175,.885,.32,1.275) both}
 //ICONO
 .contenedor-imagen {
     position: relative;
@@ -45,7 +45,7 @@ ion-content {
 @import url("https://fonts.googleapis.com/css?family=Sanchez&display=swap");
 
 @-webkit-keyframes tracking-in-expand-fwd-top{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-700px) translateY(-500px);transform:translateZ(-700px) translateY(-500px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0) translateY(0);transform:translateZ(0) translateY(0);opacity:1}}@keyframes tracking-in-expand-fwd-top{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-700px) translateY(-500px);transform:translateZ(-700px) translateY(-500px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0) translateY(0);transform:translateZ(0) translateY(0);opacity:1}}
-.tracking-in-expand-fwd-top{-webkit-animation:tracking-in-expand-fwd-top .8s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand-fwd-top .8s cubic-bezier(.215,.61,.355,1.000) both}
+.tracking-in-expand-fwd-top{-webkit-animation:tracking-in-expand-fwd-top .10s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand-fwd-top .8s cubic-bezier(.215,.61,.355,1.000) both}
 
 .header-text {
     font-size: 50px;

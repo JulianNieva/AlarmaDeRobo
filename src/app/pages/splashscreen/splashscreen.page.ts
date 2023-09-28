@@ -13,14 +13,14 @@ export class SplashscreenPage implements OnInit {
   constructor(private navCont:NavController) { }
 
   ngOnInit() {
-    //StatusBar.hide();
+    StatusBar.hide();
   }
 
   ionViewDidEnter() {
-    /*SplashScreen.hide();
+    SplashScreen.hide();
     setTimeout(() => {
       this.navCont.navigateRoot(['/login']);
-    }, 3000);*/
+    }, 5000);
   }
 
 }

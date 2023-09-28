@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { ToastController } from '@ionic/angular';
 import { Auth,signInWithEmailAndPassword,signOut,AuthErrorCodes } from '@angular/fire/auth';
+import { LoadingController } from '@ionic/angular';
+import { NavController } from '@ionic/angular';
 
 @Injectable({
   providedIn: 'root'
@@ -8,20 +10,33 @@ import { Auth,signInWithEmailAndPassword,signOut,AuthErrorCodes } from '@angular
 export class UserService {
 
   claveIngresada:any
+  user$ : any
 
-  constructor(private auth:Auth,private toast:ToastController) { }
+  constructor(private auth:Auth,private toast:ToastController,private loadController:LoadingController, private navCtrl:NavController) { }
 
   login(email:string,password:string)
   {
     //ESTO ES PELIGROSO, BAJO NINGUNA CIRCUNSTANCIA SE DEBE GUARDAR LA CLAVE DEL USUARIO
     //DEBIDO A LA APLICACION, ES NECESARIO
-    this.claveIngresada = password
+    localStorage.setItem('clave',password)
     return signInWithEmailAndPassword(this.auth,email,password)
   }
 
-  logout()
+  async logout()
   {
-    return signOut(this.auth)
+    const loading = await this.loadController.create({
+      message: 'Cerrando Sesión...',
+      showBackdrop: true,
+      spinner: "lines"
+    });
+    loading.present();
+
+    signOut(this.auth).then(() => {
+      setTimeout(() => {
+        this.navCtrl.navigateRoot('/login');
+        loading.dismiss();
+      }, 2000);
+    })
   }
 
   obtenerError(error:any) {
