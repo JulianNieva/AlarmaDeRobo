@@ -20,7 +20,7 @@ export class SplashscreenPage implements OnInit {
     SplashScreen.hide();
     setTimeout(() => {
       this.navCont.navigateRoot(['/login']);
-    }, 5000);
+    }, 5200);
   }
 
 }
