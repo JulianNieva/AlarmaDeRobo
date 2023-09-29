@@ -6,7 +6,6 @@ import { UserService } from 'src/app/services/user.service';
 import { DeviceMotion,DeviceMotionAccelerationData } from '@awesome-cordova-plugins/device-motion/ngx';
 import { Vibration } from '@awesome-cordova-plugins/vibration/ngx';
 import { Flashlight } from '@awesome-cordova-plugins/flashlight/ngx';
-import { ScreenOrientation } from '@awesome-cordova-plugins/screen-orientation/ngx';
 
 @Component({
   selector: 'app-home',
@@ -30,6 +29,7 @@ export class HomePage implements OnInit {
   audioVertical = '/assets/sonidos/audioVertical.mp3';
   audioHorizontal = '/assets/sonidos/audioHorizontal.mp3';
   audioClave = '/assets/sonidos/audioClave.mp3';
+
   audio = new Audio();
 
   firstAdmission: boolean = true;
