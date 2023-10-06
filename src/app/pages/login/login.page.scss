@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Sanchez&display=swap');
+$font: 'Sanchez', serif;
+
 ion-content{
     --background: #8D99AE;
 }
@@ -19,27 +22,33 @@ ion-card{
 
 ion-card-title{
     color:#EDF2F4;
-    font-weight: bold; 
+    font-family: $font;
 }
 
 h3{
     color:#EDF2F4;
+    font-family: $font;
 }
 
 ion-title{
     color:#03045E;
     font-weight: bold;
+    font-family: $font;
 }
 
 ion-button{
-    --background:#8D99AE;
-    color:#D90429;
-    font-weight: bold;
+    --background:#96999c;
+    color:#ff0000;
+    font-family: $font;
 }
 
 ion-item{
     border-radius: 50px;
     --background: #484e58;
+}
+
+ion-text{
+    font-family: $font;
 }
 
 .linea{

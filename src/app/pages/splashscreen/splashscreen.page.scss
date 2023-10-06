@@ -1,4 +1,6 @@
 //FONDO
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Sanchez&display=swap');
+$font: 'Sanchez', serif;
 
 ion-content {
     --background: none
@@ -50,7 +52,7 @@ ion-content {
 .header-text {
     font-size: 30px;
     line-height: 60px;
-    font-family:"Sanchez";
+    font-family:$font;
     text-align: center;
     color: #2B2D42;
 }
